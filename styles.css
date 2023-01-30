@@ -261,6 +261,7 @@ section {
         z-index: 10;
     }
     .overlay.show {
+        z-index: 10;
         opacity: 1;
         position: absolute;
         pointer-events: auto;
