@@ -1,96 +1,113 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://kit.fontawesome.com/7e512de6fa.js" crossorigin="anonymous"></script>
-    <title>matthewterraphotog</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RecordFinder - ポートフォリオ</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://unpkg.com/swiper@9/swiper-bundle.min.css"/>
+  <script src="https://unpkg.com/swiper@9/swiper-bundle.min.js"></script>
 </head>
-<body>
-    <header>
-            <div class="header-title-container">
-                <h1 class="header-title"><a href="#">Matthew Terra</a></h1>
-            </div>
-            <div class="pc-menus">
-                <nav>
-                    <ul class="links">
-                        <li><a href="">Portfolio</a></li>
-                        <li><a href="">Street</a></li>
-                        <li><a href="">Polaroid</a></li>
-                        <li><a href="">home</a></li>
-                        <li><a href="">home</a></li>
-                        <li><a href="">home</a></li>
-                        <li><a href="">home</a></li>
-                        <li><a href="">home</a></li>
-                        <li><a href="">home</a></li>
-                        <li><a href="">home</a></li>
-                    </ul>
-                </nav>
+<body class="bg-white text-gray-900 font-sans">
 
-                <div class="sns">
-                    <nav>
-                        <ul>
-                            <a href=""><i class="fa-brands fa-instagram"></i></a>
-                            <a href=""><i class="fa-brands fa-twitter"></i></a>
-                            <a href=""><i class="fa-brands fa-pinterest"></i></a>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
+  <!-- ヘッダー -->
+  <header class="flex items-center justify-between p-6 bg-gray-900 text-white">
+    <h1 class="text-2xl font-bold">RecordFinder</h1>
+    <nav class="space-x-6">
+      <a href="#" class="hover:underline">Home</a>
+      <a href="#" class="hover:underline">ジャンル</a>
+      <a href="#" class="hover:underline">年代</a>
+      <a href="#" class="hover:underline">人気</a>
+      <a href="#" class="hover:underline">About</a>
+    </nav>
+  </header>
 
-            <div class="sp-menu">
-                <i class="fa-solid fa-bars" id="open"></i>
-            </div>
-        
-        </header>
-
-    <div class="overlay">
-        <i class="fa-solid fa-xmark" id="close"></i>
-        <nav>
-            <ul>
-                <li><a href="">Portfolio</a></li>
-                <li><a href="">Street</a></li>
-                <li><a href="">Polaroid</a></li>
-                <li><a href="">home</a></li>
-                <li><a href="">home</a></li>
-                <li><a href="">home</a></li>
-                <li><a href="">home</a></li>
-                <li><a href="">home</a></li>
-                <li><a href="">home</a></li>
-                <li><a href="">home</a></li>
-                
-            </ul>
-        </nav>
-
-        <div class="sns sp-menu-sns">
-            <a href=""><i class="fa-brands fa-instagram"></i></a>
-            <a href=""><i class="fa-brands fa-twitter"></i></a>
-            <a href=""><i class="fa-brands fa-pinterest"></i></a>
+  <!-- ヒーローセクション -->
+  <section class="relative">
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="https://via.placeholder.com/1200x500?text=新着レコード1" alt="新着レコード1" class="w-full h-96 object-cover">
         </div>
-    </div>
-    
-    <div class="gallery">
-        <div class="gallery-container">
-        <ul id="gallery-image">
-            <li><img src="img/0172DD4D-AB74-4DDA-A285-FF33EB1BE130_1_105_c.jpeg" alt=""></li>
-            <li><img src="img/03480B27-872D-4ABD-9F2A-53D537FB5E24_1_105_c.jpeg" alt=""></li>
-            <li><img src="img/32B7CECB-6619-40C8-8E85-FBD6AB446A94_1_105_c.jpeg" alt=""></li>
-            <li><img src="img/33A9DD74-D1B9-4499-A27B-EE4E47C97442_1_105_c.jpeg" alt=""></li>
-            <li><img src="img/33A9DD74-D1B9-4499-A27B-EE4E47C97442_1_105_c.jpeg" alt=""></li>
-            <li><img src="img/65ADBCC8-956F-48AC-B5AC-A43F6A5EDAC6_1_105_c.jpeg" alt=""></li>
-            <li><img src="img/D68EA820-9BB7-4184-AE93-394666F2B858_1_105_c.jpeg" alt=""></li>
-            <li><img src="img/D8AE8B0B-F8A9-42D8-9781-B819ECAA17AB_1_105_c.jpeg" alt=""></li>
-            <li><img src="img/F0AA7A19-F98E-4600-9E87-C895A89E287F_1_105_c.jpeg" alt=""></li>
-        </ul>
-
-            <button id="prev"><i class="fa-solid fa-backward"></i></button>
-            <button id="next"><i class="fa-solid fa-forward"></i></button>
+        <div class="swiper-slide">
+          <img src="https://via.placeholder.com/1200x500?text=新着レコード2" alt="新着レコード2" class="w-full h-96 object-cover">
         </div>
-
+        <div class="swiper-slide">
+          <img src="https://via.placeholder.com/1200x500?text=新着レコード3" alt="新着レコード3" class="w-full h-96 object-cover">
+        </div>
+      </div>
+      <!-- ページネーション -->
+      <div class="swiper-pagination"></div>
     </div>
+  </section>
 
-    <script src="main.js"></script>
+  <!-- 注目レコードセクション -->
+  <section class="p-8">
+    <h2 class="text-2xl font-bold mb-6">注目レコード</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+      <!-- レコードカード -->
+      <div class="border rounded-lg overflow-hidden hover:shadow-lg transition">
+        <img src="https://via.placeholder.com/300x300?text=Record+1" alt="Record 1" class="w-full h-64 object-cover">
+        <div class="p-4">
+          <h3 class="font-semibold">Artist Name 1</h3>
+          <p class="text-gray-600 text-sm">Label / 1980s</p>
+          <div class="mt-2 flex space-x-2">
+            <button class="bg-gray-900 text-white px-3 py-1 rounded hover:bg-gray-700">試聴</button>
+            <button class="bg-gray-100 text-gray-900 px-3 py-1 rounded hover:bg-gray-200">ショップへ</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="border rounded-lg overflow-hidden hover:shadow-lg transition">
+        <img src="https://via.placeholder.com/300x300?text=Record+2" alt="Record 2" class="w-full h-64 object-cover">
+        <div class="p-4">
+          <h3 class="font-semibold">Artist Name 2</h3>
+          <p class="text-gray-600 text-sm">Label / 1990s</p>
+          <div class="mt-2 flex space-x-2">
+            <button class="bg-gray-900 text-white px-3 py-1 rounded hover:bg-gray-700">試聴</button>
+            <button class="bg-gray-100 text-gray-900 px-3 py-1 rounded hover:bg-gray-200">ショップへ</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="border rounded-lg overflow-hidden hover:shadow-lg transition">
+        <img src="https://via.placeholder.com/300x300?text=Record+3" alt="Record 3" class="w-full h-64 object-cover">
+        <div class="p-4">
+          <h3 class="font-semibold">Artist Name 3</h3>
+          <p class="text-gray-600 text-sm">Label / 1970s</p>
+          <div class="mt-2 flex space-x-2">
+            <button class="bg-gray-900 text-white px-3 py-1 rounded hover:bg-gray-700">試聴</button>
+            <button class="bg-gray-100 text-gray-900 px-3 py-1 rounded hover:bg-gray-200">ショップへ</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="border rounded-lg overflow-hidden hover:shadow-lg transition">
+        <img src="https://via.placeholder.com/300x300?text=Record+4" alt="Record 4" class="w-full h-64 object-cover">
+        <div class="p-4">
+          <h3 class="font-semibold">Artist Name 4</h3>
+          <p class="text-gray-600 text-sm">Label / 2000s</p>
+          <div class="mt-2 flex space-x-2">
+            <button class="bg-gray-900 text-white px-3 py-1 rounded hover:bg-gray-700">試聴</button>
+            <button class="bg-gray-100 text-gray-900 px-3 py-1 rounded hover:bg-gray-200">ショップへ</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- フッター -->
+  <footer class="bg-gray-900 text-white p-6 text-center">
+    <p>&copy; 2025 RecordFinder. All rights reserved.</p>
+  </footer>
+
+  <!-- Swiper初期化 -->
+  <script>
+    const swiper = new Swiper(".mySwiper", {
+      loop: true,
+      pagination: { el: ".swiper-pagination" },
+      autoplay: { delay: 3000 },
+    });
+  </script>
 </body>
 </html>
