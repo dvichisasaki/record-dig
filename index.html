@@ -95,68 +95,6 @@
       </div>
     </div>
   </section>
-<!-- ジャンルフィルター -->
-<section class="p-8">
-  <h2 class="text-2xl font-bold mb-4">ジャンルで絞り込み</h2>
-  <div class="flex space-x-4 mb-6">
-    <button class="genre-btn px-4 py-2 bg-gray-200 rounded hover:bg-gray-300" data-genre="all">すべて</button>
-    <button class="genre-btn px-4 py-2 bg-gray-200 rounded hover:bg-gray-300" data-genre="House">House</button>
-    <button class="genre-btn px-4 py-2 bg-gray-200 rounded hover:bg-gray-300" data-genre="Techno">Techno</button>
-    <button class="genre-btn px-4 py-2 bg-gray-200 rounded hover:bg-gray-300" data-genre="Jazz">Jazz</button>
-    <button class="genre-btn px-4 py-2 bg-gray-200 rounded hover:bg-gray-300" data-genre="Funk">Funk</button>
-  </div>
-
-  <!-- レコードカードグリッド -->
-  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6" id="record-grid">
-    <div class="record-card border rounded-lg overflow-hidden hover:shadow-lg transition" data-genre="House">
-      <img src="https://via.placeholder.com/300x300?text=Record+1" alt="Record 1" class="w-full h-64 object-cover">
-      <div class="p-4">
-        <h3 class="font-semibold">Artist 1</h3>
-        <p class="text-gray-600 text-sm">House / 1980s</p>
-        <div class="mt-2 flex space-x-2">
-          <button class="bg-gray-900 text-white px-3 py-1 rounded hover:bg-gray-700">試聴</button>
-          <button class="bg-gray-100 text-gray-900 px-3 py-1 rounded hover:bg-gray-200">ショップへ</button>
-        </div>
-      </div>
-    </div>
-
-    <div class="record-card border rounded-lg overflow-hidden hover:shadow-lg transition" data-genre="Techno">
-      <img src="https://via.placeholder.com/300x300?text=Record+2" alt="Record 2" class="w-full h-64 object-cover">
-      <div class="p-4">
-        <h3 class="font-semibold">Artist 2</h3>
-        <p class="text-gray-600 text-sm">Techno / 1990s</p>
-        <div class="mt-2 flex space-x-2">
-          <button class="bg-gray-900 text-white px-3 py-1 rounded hover:bg-gray-700">試聴</button>
-          <button class="bg-gray-100 text-gray-900 px-3 py-1 rounded hover:bg-gray-200">ショップへ</button>
-        </div>
-      </div>
-    </div>
-
-    <div class="record-card border rounded-lg overflow-hidden hover:shadow-lg transition" data-genre="Jazz">
-      <img src="https://via.placeholder.com/300x300?text=Record+3" alt="Record 3" class="w-full h-64 object-cover">
-      <div class="p-4">
-        <h3 class="font-semibold">Artist 3</h3>
-        <p class="text-gray-600 text-sm">Jazz / 1970s</p>
-        <div class="mt-2 flex space-x-2">
-          <button class="bg-gray-900 text-white px-3 py-1 rounded hover:bg-gray-700">試聴</button>
-          <button class="bg-gray-100 text-gray-900 px-3 py-1 rounded hover:bg-gray-200">ショップへ</button>
-        </div>
-      </div>
-    </div>
-
-    <div class="record-card border rounded-lg overflow-hidden hover:shadow-lg transition" data-genre="Funk">
-      <img src="https://via.placeholder.com/300x300?text=Record+4" alt="Record 4" class="w-full h-64 object-cover">
-      <div class="p-4">
-        <h3 class="font-semibold">Artist 4</h3>
-        <p class="text-gray-600 text-sm">Funk / 2000s</p>
-        <div class="mt-2 flex space-x-2">
-          <button class="bg-gray-900 text-white px-3 py-1 rounded hover:bg-gray-700">試聴</button>
-          <button class="bg-gray-100 text-gray-900 px-3 py-1 rounded hover:bg-gray-200">ショップへ</button>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
 
 <script>
   const genreButtons = document.querySelectorAll('.genre-btn');
