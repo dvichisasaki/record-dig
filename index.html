@@ -36,21 +36,40 @@
           <img src="https://via.placeholder.com/1200x500?text=新着レコード3" alt="新着レコード3" class="w-full h-96 object-cover">
         </div>
       </div>
-      <!-- ページネーション -->
       <div class="swiper-pagination"></div>
     </div>
   </section>
 
-  <!-- 注目レコードセクション -->
+  <!-- ジャンル & 年代フィルター -->
   <section class="p-8">
-    <h2 class="text-2xl font-bold mb-6">注目レコード</h2>
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-      <!-- レコードカード -->
-      <div class="border rounded-lg overflow-hidden hover:shadow-lg transition">
+    <h2 class="text-2xl font-bold mb-4">絞り込み検索</h2>
+    
+    <!-- ジャンルボタン -->
+    <div class="flex space-x-4 mb-4">
+      <button class="filter-btn px-4 py-2 bg-gray-200 rounded hover:bg-gray-300" data-genre="all">すべて</button>
+      <button class="filter-btn px-4 py-2 bg-gray-200 rounded hover:bg-gray-300" data-genre="House">House</button>
+      <button class="filter-btn px-4 py-2 bg-gray-200 rounded hover:bg-gray-300" data-genre="Techno">Techno</button>
+      <button class="filter-btn px-4 py-2 bg-gray-200 rounded hover:bg-gray-300" data-genre="Jazz">Jazz</button>
+      <button class="filter-btn px-4 py-2 bg-gray-200 rounded hover:bg-gray-300" data-genre="Funk">Funk</button>
+    </div>
+
+    <!-- 年代ボタン -->
+    <div class="flex space-x-4 mb-6">
+      <button class="filter-btn px-4 py-2 bg-gray-200 rounded hover:bg-gray-300" data-year="all">すべて</button>
+      <button class="filter-btn px-4 py-2 bg-gray-200 rounded hover:bg-gray-300" data-year="1970s">1970s</button>
+      <button class="filter-btn px-4 py-2 bg-gray-200 rounded hover:bg-gray-300" data-year="1980s">1980s</button>
+      <button class="filter-btn px-4 py-2 bg-gray-200 rounded hover:bg-gray-300" data-year="1990s">1990s</button>
+      <button class="filter-btn px-4 py-2 bg-gray-200 rounded hover:bg-gray-300" data-year="2000s">2000s</button>
+    </div>
+
+    <!-- レコードカードグリッド -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6" id="record-grid">
+      <!-- サンプルレコード -->
+      <div class="record-card border rounded-lg overflow-hidden hover:shadow-lg transition" data-genre="House" data-year="1980s">
         <img src="https://via.placeholder.com/300x300?text=Record+1" alt="Record 1" class="w-full h-64 object-cover">
         <div class="p-4">
-          <h3 class="font-semibold">Artist Name 1</h3>
-          <p class="text-gray-600 text-sm">Label / 1980s</p>
+          <h3 class="font-semibold">Artist 1</h3>
+          <p class="text-gray-600 text-sm">House / 1980s</p>
           <div class="mt-2 flex space-x-2">
             <button class="bg-gray-900 text-white px-3 py-1 rounded hover:bg-gray-700">試聴</button>
             <button class="bg-gray-100 text-gray-900 px-3 py-1 rounded hover:bg-gray-200">ショップへ</button>
@@ -58,11 +77,11 @@
         </div>
       </div>
 
-      <div class="border rounded-lg overflow-hidden hover:shadow-lg transition">
+      <div class="record-card border rounded-lg overflow-hidden hover:shadow-lg transition" data-genre="Techno" data-year="1990s">
         <img src="https://via.placeholder.com/300x300?text=Record+2" alt="Record 2" class="w-full h-64 object-cover">
         <div class="p-4">
-          <h3 class="font-semibold">Artist Name 2</h3>
-          <p class="text-gray-600 text-sm">Label / 1990s</p>
+          <h3 class="font-semibold">Artist 2</h3>
+          <p class="text-gray-600 text-sm">Techno / 1990s</p>
           <div class="mt-2 flex space-x-2">
             <button class="bg-gray-900 text-white px-3 py-1 rounded hover:bg-gray-700">試聴</button>
             <button class="bg-gray-100 text-gray-900 px-3 py-1 rounded hover:bg-gray-200">ショップへ</button>
@@ -70,11 +89,11 @@
         </div>
       </div>
 
-      <div class="border rounded-lg overflow-hidden hover:shadow-lg transition">
+      <div class="record-card border rounded-lg overflow-hidden hover:shadow-lg transition" data-genre="Jazz" data-year="1970s">
         <img src="https://via.placeholder.com/300x300?text=Record+3" alt="Record 3" class="w-full h-64 object-cover">
         <div class="p-4">
-          <h3 class="font-semibold">Artist Name 3</h3>
-          <p class="text-gray-600 text-sm">Label / 1970s</p>
+          <h3 class="font-semibold">Artist 3</h3>
+          <p class="text-gray-600 text-sm">Jazz / 1970s</p>
           <div class="mt-2 flex space-x-2">
             <button class="bg-gray-900 text-white px-3 py-1 rounded hover:bg-gray-700">試聴</button>
             <button class="bg-gray-100 text-gray-900 px-3 py-1 rounded hover:bg-gray-200">ショップへ</button>
@@ -82,11 +101,11 @@
         </div>
       </div>
 
-      <div class="border rounded-lg overflow-hidden hover:shadow-lg transition">
+      <div class="record-card border rounded-lg overflow-hidden hover:shadow-lg transition" data-genre="Funk" data-year="2000s">
         <img src="https://via.placeholder.com/300x300?text=Record+4" alt="Record 4" class="w-full h-64 object-cover">
         <div class="p-4">
-          <h3 class="font-semibold">Artist Name 4</h3>
-          <p class="text-gray-600 text-sm">Label / 2000s</p>
+          <h3 class="font-semibold">Artist 4</h3>
+          <p class="text-gray-600 text-sm">Funk / 2000s</p>
           <div class="mt-2 flex space-x-2">
             <button class="bg-gray-900 text-white px-3 py-1 rounded hover:bg-gray-700">試聴</button>
             <button class="bg-gray-100 text-gray-900 px-3 py-1 rounded hover:bg-gray-200">ショップへ</button>
@@ -95,38 +114,56 @@
       </div>
     </div>
   </section>
-
-<script>
-  const genreButtons = document.querySelectorAll('.genre-btn');
-  const recordCards = document.querySelectorAll('.record-card');
-
-  genreButtons.forEach(button => {
-    button.addEventListener('click', () => {
-      const genre = button.getAttribute('data-genre');
-
-      recordCards.forEach(card => {
-        if (genre === 'all' || card.getAttribute('data-genre') === genre) {
-          card.style.display = 'block';
-        } else {
-          card.style.display = 'none';
-        }
-      });
-    });
-  });
-</script>
 
   <!-- フッター -->
   <footer class="bg-gray-900 text-white p-6 text-center">
     <p>&copy; 2025 RecordFinder. All rights reserved.</p>
   </footer>
 
-  <!-- Swiper初期化 -->
+  <!-- Swiper初期化 & フィルター処理 -->
   <script>
+    // Swiper
     const swiper = new Swiper(".mySwiper", {
       loop: true,
       pagination: { el: ".swiper-pagination" },
       autoplay: { delay: 3000 },
     });
+
+    // 絞り込み機能
+    const genreButtons = document.querySelectorAll('[data-genre]');
+    const yearButtons = document.querySelectorAll('[data-year]');
+    const recordCards = document.querySelectorAll('.record-card');
+
+    let selectedGenre = 'all';
+    let selectedYear = 'all';
+
+    genreButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        selectedGenre = btn.getAttribute('data-genre');
+        filterRecords();
+      });
+    });
+
+    yearButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        selectedYear = btn.getAttribute('data-year');
+        filterRecords();
+      });
+    });
+
+    function filterRecords() {
+      recordCards.forEach(card => {
+        const cardGenre = card.getAttribute('data-genre');
+        const cardYear = card.getAttribute('data-year');
+
+        if ((selectedGenre === 'all' || cardGenre === selectedGenre) &&
+            (selectedYear === 'all' || cardYear === selectedYear)) {
+          card.style.display = 'block';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
   </script>
 </body>
 </html>
